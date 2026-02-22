@@ -1,3 +1,5 @@
+package graph;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,7 +39,7 @@ public class DFS {
         return count;
     }
 
-    //DFS in grid
+    //graph.DFS in grid
     int[][] dirs = {{1,0},{-1,0},{0,1},{0,-1}};
 
     public void dfs(int r, int c, char[][] grid) {

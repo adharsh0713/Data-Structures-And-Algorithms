@@ -1,10 +1,12 @@
+package graph;
+
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Deque;
 import java.util.List;
 
 public class _01BFS {
-    // Standard 0–1 BFS (Adjacency List)
+    // Standard 0–1 graph.BFS (Adjacency List)
     public int[] zeroOneBFS(int n, List<List<int[]>> graph, int src) {
 
         int[] dist = new int[n];
@@ -35,7 +37,7 @@ public class _01BFS {
         return dist;
     }
 
-    // Grid 0–1 BFS
+    // Grid 0–1 graph.BFS
     public int minCost(int[][] grid) {
 
         int m = grid.length, n = grid[0].length;

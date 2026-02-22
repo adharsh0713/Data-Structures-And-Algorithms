@@ -1,10 +1,12 @@
+package graph;
+
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Queue;
 
 public class MultiSourceBFS {
-    // Multi-Source BFS (Grid)
+    // Multi-Source graph.BFS (Grid)
     public int[][] multiSourceBFS(int[][] grid) {
         int m = grid.length, n = grid[0].length;
         Queue<int[]> queue = new ArrayDeque<>();
@@ -86,7 +88,7 @@ public class MultiSourceBFS {
         return fresh == 0 ? minutes : -1;
     }
 
-    // Multi-Source BFS on Graph
+    // Multi-Source graph.BFS on Graph
     public int[] multiSourceGraph(int n, List<List<Integer>> graph, List<Integer> sources) {
         int[] dist = new int[n];
         Arrays.fill(dist, -1);
